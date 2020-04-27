@@ -20,19 +20,13 @@ public class HomeController {
     return"/alumno/formCrear";
 
 }
-@GetMapping("/lista")
-    public String GuardarAlumno(@RequestParam("codigo") String codigo,
-                                @RequestParam("nombre") String nombre,
-                                @RequestParam("apellido") String apellido,
-                                @RequestParam("correo") String correo,
-                                Model model){
-        model.addAttribute("codigo", codigo);
-        model.addAttribute("nombre", nombre);
-        model.addAttribute("apellido", apellido);
-        model.addAttribute("correo", correo);
 
+    @GetMapping("/unachiqui1")
+    public String unachiquit222a(Model model){
+        String x = "gaaaaaaa";
+        model.addAttribute("msg",x);
+        System.out.println("Hola, esta es una prueba jaja");
+        return"/alumno/formCrear";
 
-
-        return "alumno/resumen";
     }
 }

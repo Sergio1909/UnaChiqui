@@ -10,4 +10,12 @@ public class HomeController {
     return "index";
 }
 
+@GetMapping ("ListaNueva"){
+    public String listarNuevosAlumnos(){
+
+        return "resumen";
+
+    }
+}
+
 }

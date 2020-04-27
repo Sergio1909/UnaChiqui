@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear alumno</title>
+</head>
+<body>
+<h2> Formulario de creación de alumni</h2>
+<form method="post" th:action="@{/guardarAlumno}">
+
+    <label>Código:</label>
+    <input type="text" name="codigo"/><br>
+    <label>Nombre:</label>
+    <input type="text" name="nombre"/><br>
+    <label>Apellido:</label>
+    <input type="text" name="apellido"/><br>
+    <label>Correo:</label>
+    <input type="text" name="correo"/><br>
+    <input type="submit" value="Enviar"/>
+</form>
+</body>
+</html>

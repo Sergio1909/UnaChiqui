@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Resumen del alumno creado</h2>
+<a th:href="@{/alumno}">Regresar a la lista</a><br>
+
+    <label>Código:</label>
+    <input type="text" disabled="disabled" th:value="${codigo}"/><br>
+    <label>Nombre:</label>
+    <input type="text" disabled="disabled" th:value="${nombre}" /><br>
+    <label>Apellido:</label>
+    <input type="text" disabled="disabled" th:value="${apellido}" /><br>
+    <label>Correo:</label>
+    <input type="text" disabled="disabled" th:value="${correo}" /><br>
+
+</form>
+
+
+
+</body>
+</html>

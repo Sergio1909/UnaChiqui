@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Alumnos</title>
+</head>
+<body>
+<h2>Lista alumnos sw2</h2>
+<a th:href="@{/crearAlumno}"> Crear un alumno</a>
+<table>
+    <tr>
+        <th>codigo</th>
+        <th>nombre y apellido</th>
+        <th>correo</th>
+    </tr>
+    <tr th:each="alumno : ${listaAlumnos}">
+        <td th:text="${alumno.codigo}">20000000</td>
+        <td th:text="|${alumno.nombre} ${alumno.apellido}|">juan perez</td>
+        <td th:text="${alumno.correo}">a@a.com</td>
+    </tr>
+
+</table>
+</body>
+</html>
